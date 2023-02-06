@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,14 +10,15 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vicentjordi.messagesfx.MessageController">
    <center>
-      <AnchorPane prefHeight="173.0" prefWidth="263.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="144.0" prefWidth="263.0" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="14.0" layoutY="14.0" text="Username" />
             <Label layoutX="14.0" layoutY="71.0" text="Password" />
             <Label layoutX="14.0" layoutY="128.0" text="Repeat pass" />
-            <TextField fx:id="txtUsernameRegister" layoutX="100.0" layoutY="10.0" />
-            <TextField fx:id="txtPasswordRegister" layoutX="100.0" layoutY="67.0" />
-            <TextField fx:id="txtRepeatPass" layoutX="101.0" layoutY="124.0" />
+            <TextField fx:id="txtUsernameRegister" layoutX="100.0" layoutY="10.0" prefWidth="148.0" />
+            <Label fx:id="lblError" layoutX="22.0" layoutY="158.0" prefHeight="18.0" prefWidth="219.0" textFill="RED" />
+            <PasswordField fx:id="txtPasswordRegister" layoutX="101.0" layoutY="67.0" />
+            <PasswordField fx:id="txtRepeatPass" layoutX="102.0" layoutY="124.0" />
          </children>
       </AnchorPane>
    </center>

@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dc7dbb3-340d-464b-93cb-d225e393c10e" name="Changes" comment="+Inici projecte MessagesFX&#10;+Disseny y estructura &#10;+Stages login-register" />
+    <list default="true" id="1dc7dbb3-340d-464b-93cb-d225e393c10e" name="Changes" comment="+nodeServer&amp;ServiceUtils">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetLoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/OkResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetRegistrationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetRegistrationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/ServiceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/ServiceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/utils/errorMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/utils/MessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/vicentjordi/messagesfx/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/vicentjordi/messagesfx/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/vicentjordi/messagesfx/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/vicentjordi/messagesfx/RegisterView.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -35,13 +49,38 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/vicen/OneDrive/Escritorio/PSP/PhotoUploader",
+    "last_opened_file_path": "C:/Users/vicen/OneDrive/Escritorio/PSP/gson-2.10.1.jar",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3321839",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vicentjordi.messagesfx.models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MessagesFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vicentjordi.messagesfx.MessagesFX" />
+      <module name="MessagesFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vicentjordi.messagesfx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MessagesFX" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675679558480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="+Inici projecte MessagesFX&#10;+Disseny y estructura &#10;+Stages login-register">
+      <created>1675679759392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675679759392</updated>
+    </task>
+    <task id="LOCAL-00003" summary="+nodeServer&amp;ServiceUtils">
+      <created>1675680227790</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675680227790</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+Inici projecte MessagesFX&#10;+Disseny y estructura &#10;+Stages login-register" />
-    <option name="LAST_COMMIT_MESSAGE" value="+Inici projecte MessagesFX&#10;+Disseny y estructura &#10;+Stages login-register" />
+    <MESSAGE value="+nodeServer&amp;ServiceUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="+nodeServer&amp;ServiceUtils" />
   </component>
 </project>
