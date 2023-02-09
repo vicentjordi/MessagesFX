@@ -29,11 +29,6 @@ public class ServiceUtils {
     }
 
     public static String getResponse(String url, String data, String method) {
-        System.out.println("getRespose");
-        System.out.println(url);
-        System.out.println(data);
-        System.out.println(method);
-
         BufferedReader bufInput = null;
         StringJoiner result = new StringJoiner("\n");
         try {
