@@ -14,7 +14,7 @@
    <top>
       <AnchorPane prefHeight="86.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnChangeImage" layoutX="25.0" layoutY="43.0" mnemonicParsing="false" text="Change image" />
+            <Button fx:id="btnChangeImage" layoutX="25.0" layoutY="43.0" mnemonicParsing="false" onAction="#changeImage" text="Change image" />
             <ImageView fx:id="ivUsernamePhoto" fitHeight="63.0" fitWidth="63.0" layoutX="142.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="lblUsername" layoutX="25.0" layoutY="14.0" prefHeight="18.0" prefWidth="90.0" />
          </children>
@@ -28,7 +28,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="btnRefresh" layoutX="560.0" layoutY="15.0" mnemonicParsing="false" text="Refresh" />
+            <Button fx:id="btnRefresh" layoutX="560.0" layoutY="15.0" mnemonicParsing="false" onAction="#refreshData" text="Refresh" />
             <TableView fx:id="tvMessages" layoutX="2.0" layoutY="48.0" prefHeight="178.0" prefWidth="650.0">
               <columns>
                 <TableColumn fx:id="tcMessage" prefWidth="338.3999881744385" text="Message" />
@@ -36,7 +36,7 @@
                   <TableColumn fx:id="tcSent" prefWidth="154.40005493164062" text="Sent" />
               </columns>
             </TableView>
-            <Button fx:id="btnDeleteMessage" layoutX="277.0" layoutY="238.0" mnemonicParsing="false" text="Delete message" />
+            <Button fx:id="btnDeleteMessage" layoutX="277.0" layoutY="238.0" mnemonicParsing="false" onAction="#deleteMessage" text="Delete message" />
             <Label layoutX="14.0" layoutY="298.0" text="Send a Message">
                <font>
                   <Font size="18.0" />
@@ -65,8 +65,8 @@
                </font>
             </Label>
             <TextField fx:id="txtMessage" layoutX="14.0" layoutY="58.0" prefHeight="26.0" prefWidth="414.0" />
-            <Button fx:id="btnSelectImg" layoutX="442.0" layoutY="58.0" mnemonicParsing="false" text="Select Image" />
-            <Button fx:id="btnSend" layoutX="537.0" layoutY="58.0" mnemonicParsing="false" text="Send message" />
+            <Button fx:id="btnSelectImg" layoutX="442.0" layoutY="58.0" mnemonicParsing="false" onAction="#selectImg" text="Select Image" />
+            <Button fx:id="btnSend" layoutX="537.0" layoutY="58.0" mnemonicParsing="false" onAction="#sendMessage" text="Send message" />
             <ImageView fx:id="ivSendImage" fitHeight="46.0" fitWidth="46.0" layoutX="441.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>

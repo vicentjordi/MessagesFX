@@ -48,7 +48,7 @@ public class Users {
 
     @Override
     public String toString(){
-        return "name: " + name + ", password: " + password +
+        return "_id: " + id + ", name: " + name + ", password: " + password +
                 ", image: " + image;
     }
 

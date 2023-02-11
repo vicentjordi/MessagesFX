@@ -11,16 +11,17 @@ import com.vicentjordi.messagesfx.utils.MessageUtils;
 import com.vicentjordi.messagesfx.utils.ScreenLoader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class LoginController {
+public class LoginController{
     @FXML private TextField txtUsername;
     @FXML private TextField txtPassword;
     @FXML private Label lblErrorLogin;
@@ -52,6 +53,7 @@ public class LoginController {
 
                         ScreenLoader.loadScreen("MessagesView.fxml", (Stage)
                                 ((Node) actionEvent.getSource()).getScene().getWindow());
+
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -61,4 +63,5 @@ public class LoginController {
             });
         }
     }
+
 }
