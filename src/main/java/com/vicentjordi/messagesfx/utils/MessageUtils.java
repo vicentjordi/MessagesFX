@@ -28,4 +28,20 @@ public class MessageUtils {
         dialog.showAndWait();
     }
 
+    public static void sendMessageFail(){
+        Alert dialog = new Alert(Alert.AlertType.ERROR);
+
+        dialog.setTitle("Error Sending Message");
+        dialog.setHeaderText("We found an error in the message.");
+        dialog.setContentText("You don't select a User or the body of Message is empty");
+        dialog.showAndWait();
+    }
+    public static void messageSendSuccess(){
+        Alert dialog = new Alert(Alert.AlertType.CONFIRMATION);
+
+        dialog.setTitle("Message  Send");
+        dialog.setHeaderText("It was sent correctly.");
+        dialog.setContentText("The message arrived with any problem");
+        dialog.showAndWait();
+    }
 }

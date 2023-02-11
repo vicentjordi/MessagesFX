@@ -11,9 +11,7 @@ public class Messages {
     private String image;
     private String sent;
 
-    public Messages(String from, String to, String message, String image, String sent) {
-        this.from = from;
-        this.to = to;
+    public Messages(String message, String image, String sent) {
         this.message = message;
         this.image = image;
         this.sent = sent;

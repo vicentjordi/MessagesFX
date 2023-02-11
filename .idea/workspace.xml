@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dc7dbb3-340d-464b-93cb-d225e393c10e" name="Changes" comment="+Anyadit controlador per a cada vista&#10;+Canviat a services per a els metodes de login/register">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/getMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/getUsers.java" afterDir="false" />
+    <list default="true" id="1dc7dbb3-340d-464b-93cb-d225e393c10e" name="Changes" comment="+Agafar els Usuaris de el servidor i els guardem en una llista&#10;+Agafar el id del usuari seleccionat en la tabla">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetPutResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/deleteMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/postMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/services/putUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetAllMessagesResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetUsersResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/vicentjordi/messagesfx/MessagesView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/vicentjordi/messagesfx/MessagesView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/models/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/getSendMessageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/responses/GetSendMessageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/utils/MessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vicentjordi/messagesfx/utils/MessageUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675954664774</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="+Agafar els Usuaris de el servidor i els guardem en una llista&#10;+Agafar el id del usuari seleccionat en la tabla">
+      <created>1676102913295</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676102913295</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +150,7 @@
     <MESSAGE value="+POST" />
     <MESSAGE value="+Models Users-Messages&#10;+Post /resgister&#10;+Post /login" />
     <MESSAGE value="+Anyadit controlador per a cada vista&#10;+Canviat a services per a els metodes de login/register" />
-    <option name="LAST_COMMIT_MESSAGE" value="+Anyadit controlador per a cada vista&#10;+Canviat a services per a els metodes de login/register" />
+    <MESSAGE value="+Agafar els Usuaris de el servidor i els guardem en una llista&#10;+Agafar el id del usuari seleccionat en la tabla" />
+    <option name="LAST_COMMIT_MESSAGE" value="+Agafar els Usuaris de el servidor i els guardem en una llista&#10;+Agafar el id del usuari seleccionat en la tabla" />
   </component>
 </project>

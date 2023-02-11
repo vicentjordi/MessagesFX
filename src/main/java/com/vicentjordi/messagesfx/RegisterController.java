@@ -101,6 +101,7 @@ public class RegisterController {
             MessageUtils.fileError();
         }
     }
+
     private void cleanReagistration(){
         //Vaciar los TextFields y el ImageView
         txtUsernameRegister.clear();
