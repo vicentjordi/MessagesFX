@@ -2,6 +2,7 @@ package com.vicentjordi.messagesfx.models;
 
 
 import com.google.gson.annotations.SerializedName;
+import javafx.scene.image.ImageView;
 
 public class Users {
     @SerializedName("_id")
@@ -19,6 +20,10 @@ public class Users {
     public Users(String name, String password) {
         this.name = name;
         this.password = password;
+    }
+
+    public Users(String image) {
+        this.image = image;
     }
 
     public String getId() {
@@ -44,6 +49,14 @@ public class Users {
     }
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public ImageView getImageView() {
+        ImageView imgView = new ImageView(getImage());
+        imgView.setFitHeight(30);
+        imgView.setPreserveRatio(true);
+
+        return imgView;
     }
 
     @Override

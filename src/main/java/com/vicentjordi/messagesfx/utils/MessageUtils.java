@@ -44,4 +44,13 @@ public class MessageUtils {
         dialog.setContentText("The message arrived with any problem");
         dialog.showAndWait();
     }
+
+    public static void deleteMessageFail(){
+        Alert dialog = new Alert(Alert.AlertType.ERROR);
+
+        dialog.setTitle("Error Deleting Message");
+        dialog.setHeaderText("We found an error deleting the message.");
+        dialog.setContentText("You don't select Message");
+        dialog.showAndWait();
+    }
 }

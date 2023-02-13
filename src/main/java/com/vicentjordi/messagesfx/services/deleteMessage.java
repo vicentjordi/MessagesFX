@@ -5,7 +5,7 @@ import com.vicentjordi.messagesfx.models.Messages;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 
-public class deleteMessage extends Service<Boolean> {
+public class deleteMessage extends Service<String> {
     String idMessage;
 
     public deleteMessage(String idMessage) {
@@ -13,14 +13,14 @@ public class deleteMessage extends Service<Boolean> {
     }
 
     @Override
-    protected Task<Boolean> createTask() {
-        return new Task<Boolean>() {
+    protected Task<String> createTask() {
+        return new Task<String>() {
             @Override
-            protected Boolean call() throws Exception {
+            protected String call() throws Exception {
                 Gson gson = new Gson();
                 String resp = ServiceUtils.getResponse(nodeServer.getServer() + "/messages/" + idMessage,
                         null, "DELETE");
-                return Boolean.parseBoolean(resp);
+                return resp;
             }
         };
     }

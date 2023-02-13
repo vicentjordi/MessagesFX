@@ -1,6 +1,7 @@
 package com.vicentjordi.messagesfx.models;
 
 import com.google.gson.annotations.SerializedName;
+import javafx.scene.image.ImageView;
 
 public class Messages {
     @SerializedName("_id")
@@ -65,6 +66,13 @@ public class Messages {
         this.sent = sent;
     }
 
+    public ImageView getImageView() {
+        ImageView imgView = new ImageView(getImage());
+        imgView.setFitHeight(30);
+        imgView.setPreserveRatio(true);
+
+        return imgView;
+    }
     @Override
     public String toString(){
         return "from: " + from + ", to: " + to + ", message: " + message +

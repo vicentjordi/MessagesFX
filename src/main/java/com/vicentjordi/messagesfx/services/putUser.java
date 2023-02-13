@@ -1,14 +1,16 @@
 package com.vicentjordi.messagesfx.services;
 
 import com.google.gson.Gson;
+import com.vicentjordi.messagesfx.models.Users;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 
 public class putUser extends Service<String> {
-    String dataImage;
 
-    public putUser(String dataImage) {
-        this.dataImage = dataImage;
+    Users user;
+
+    public putUser(Users user) {
+        this.user = user;
     }
 
     @Override
@@ -18,7 +20,7 @@ public class putUser extends Service<String> {
             protected String call() throws Exception {
                 Gson gson = new Gson();
                 String resp = ServiceUtils.getResponse(nodeServer.getServer() + "/users",
-                        gson.toJson(dataImage), "PUT");
+                        gson.toJson(user), "PUT");
                 return resp;
             }
         };
